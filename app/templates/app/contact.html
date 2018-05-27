@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+{% extends "app/base.html" %}
+{% block body_block %}
+
+<div class="container">
+  <h1>Connect</h1>
+  <p>I’m excited to meet you where you are. </p>
+
+  <form role="form" action="" method="post">
+      {% csrf_token %}
+      {{ form.as_p }}
+      <button type="submit">Submit</button>
+  </form>
+</div>
+{% endblock %}

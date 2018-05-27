@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+{% load staticfiles %}
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>MindfulSchmidt</title>
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Gentium+Book+Basic" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{% static "css/custom.css" %}"/>
+  </head>
+  <body>
+
+    <div class="container">
+
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <!-- <li><a class="navbar-brand" href="{% url 'index' %}"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh2fEr-loo4P6gNwgNZD_AlaDsmChBF-3henSNkMWkKv7fWxbu" height="35" width="35"/></a></li> -->
+              <li><a class="navbar-brand" href="{% url 'app:index' %}"><b>MindfulSchmidt</b></li><br>
+              <li><a class="navbar-link" href="{% url 'app:about_us' %}">About Us</a></li>
+              <li><a class="navbar-link" href="{% url 'app:what_we_do' %}">What We Do</a></li>
+              <li><a class="navbar-link" href="{% url 'app:service_pricing' %}">Service/Pricing</a></li>
+
+              <li><a class="navbar-link" href="{% url 'app:contact' %}">Contact</a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+
+    </div>
+
+
+    {% block body_block %}
+    {# Anything outside of this will be inherited if you use extend.#}
+    {% endblock %}
+
+      <br><br><br>
+      <hr class="featurette-divider">
+
+      <footer>
+        <p class="pull-right"><a href="#">Back to top  &middot;  </a></p>
+        <p>    &copy; 2018 Project Jumpy, Inc. <a href="{% url 'app:contact' %}"> &middot; Contact &middot;</a></p>
+        <br>
+      </footer>
+
+
+      <script
+        src="http://code.jquery.com/jquery-3.1.1.js"
+        integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+        crossorigin="anonymous"></script>  <!-- Latest compiled and minified JavaScript -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+
+  </body>
+</html>
