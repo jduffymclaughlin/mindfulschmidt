@@ -35,8 +35,19 @@
               <!-- <li><a class="navbar-brand" href="{% url 'index' %}"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh2fEr-loo4P6gNwgNZD_AlaDsmChBF-3henSNkMWkKv7fWxbu" height="35" width="35"/></a></li> -->
               <li><a class="navbar-brand" href="{% url 'app:index' %}"><b>MindfulSchmidt</b></li><br>
               <li><a class="navbar-link" href="{% url 'app:about_us' %}">About Us</a></li>
-              <li><a class="navbar-link" href="{% url 'app:what_we_do' %}">What We Do</a></li>
-              <li><a class="navbar-link" href="{% url 'app:service_pricing' %}">Service/Pricing</a></li>
+
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Offerings<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="{% url 'app:corporate' %}">Corporate</a></li>
+                  <li><a href="{% url 'app:school' %}">School</a></li>
+                  <li><a href="{% url 'app:assisted_living' %}">Assisted Living</a></li>
+                  <li><a href="{% url 'app:private' %}">Private</a></li>
+                </ul>
+              </li>
+
+
+
 
               <li><a class="navbar-link" href="{% url 'app:contact' %}">Contact</a></li>
             </ul>

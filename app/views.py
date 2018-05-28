@@ -22,6 +22,18 @@ def what_we_do(request):
 def service_pricing(request):
     return render(request, 'app/service_pricing.html')
 
+def corporate(request):
+	return render(request, 'app/corporate.html')
+
+def school(request):
+	return render(request, 'app/school.html')
+
+def assisted_living(request):
+	return render(request, 'app/assisted_living.html')
+
+def private(request):
+	return render(request, 'app/private.html')
+
 def contact_sent(request, context):
 	return render(request, 'app/contact_sent.html', context)
 

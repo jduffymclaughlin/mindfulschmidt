@@ -35,10 +35,23 @@ h3{
   color: darkgreen;
   font-family: 'Gentium Book Basic', serif;}
 
+a{
+  color:darkgreen;
+    font-family: 'Gentium Book Basic', serif;
+
+}
+
+li{
+  text-align:center;
+  color: darkgreen;
+  font-family: 'Gentium Book Basic', serif;
+}
+
 p{
   color: darkgreen;
   font-size: 12pt;
-  font-family: 'Gentium Book Basic', serif;}
+  font-family: 'Gentium Book Basic', serif;
+}
 
 .navbar-fixed-top {
     border-color: #ffffff;

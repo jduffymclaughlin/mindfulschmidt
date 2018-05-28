@@ -3,13 +3,18 @@
 {% block body_block %}
 
 <div class="container">
-  <h1>Connect</h1>
+
+  <br><br><br><br><br><br>
+  <h1>Connect With Us</h1>
   <p>I’m excited to meet you where you are. </p>
+  <br>
 
   <form role="form" action="" method="post">
       {% csrf_token %}
       {{ form.as_p }}
-      <button type="submit">Submit</button>
+      <br>  
+      <button type="submit" class="btn btn-success contactsubmit">Submit</button>
+
   </form>
 </div>
 {% endblock %}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+{% extends "app/base.html" %}
+{% block body_block %}
+
+    <br><br><br><br><br><br>
+    <div class="container">
+      <h1>Corporate Environment</h1>
+      <p>In an age of emphasizing office culture, offering yoga and meditation as a benefit can help attract new talent, increase the productivity of your team, and reduce the stress of your employees. Companies across the country are discovering the benefit of teaching and cultivating mindfulness-based exercises to their employees - and there are studies to back it up. Research has shown that meditation increases creativity, heightens attention span, and promotes greater empathy and communication. </p>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7 col-md-push-5">
+          <h2 class="featurette-heading">Mission  <span class="text-muted">  Impact.</span></h2>
+          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        </div>
+        <div class="col-md-5 col-md-pull-7">
+          <img class="featurette-image img-responsive center-block" src="https://s3.amazonaws.com/project-jumpy/10888567_10204927066035284_180674814390338846_n.jpg" alt="Generic placeholder image">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Vision <span class="text-muted"> See for yourself.</span></h2>
+          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          <br><br>
+          <p><a class="btn btn-success" href="{% url 'app:service_pricing' %}" role="button">Service/Pricing &raquo;</a></p>
+
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive center-block" src="http://www.thephoblographer.com/wp-content/uploads/2015/10/061.jpg" alt="Generic placeholder image">
+        </div>
+      </div>
+
+
+
+    </div>
+
+
+{% endblock %}
+
