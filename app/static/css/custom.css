@@ -41,6 +41,19 @@ a{
 
 }
 
+th{
+  text-align: center;
+  color: purple;
+  font-family: 'Gentium Book Basic', serif;
+}
+
+td{
+  text-align: center;
+  color: purple;
+  font-family: 'Gentium Book Basic', serif;
+}
+
+
 li{
   text-align:center;
   color: darkgreen;
