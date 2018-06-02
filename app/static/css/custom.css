@@ -1,17 +1,31 @@
 
 h1{
-  color: purple;
+  color: #47627c;
   font-family: 'Gentium Book Basic', serif;}
 h2{
-  color: purple;
+  color: #47627c;
   font-family: 'Gentium Book Basic', serif;}
 h3{
-  color: purple;
+  color: #47627c;
   font-family: 'Gentium Book Basic', serif;}
+h6{
+  color: #c9cfd8;
+  font-family: 'Gentium Book Basic', serif;}
+}
+
+.navbar-nav>li {
+        float: none;
+        display: inline-block;
+    }
+
+#path li {
+    display: inline-block;
+}
 
 .form-group label{
-  color: purple;
+  color: #47627c;
   font-family: 'Gentium Book Basic', serif;}
+
 
 #panels{
   align-content: center;
@@ -20,7 +34,7 @@ h3{
   width: 900px;
 }
 .panel-title{
-  color: purple;
+  color: #47627c;
   font-family: 'Gentium Book Basic', serif;}
 
 .contactsubmit{
@@ -32,36 +46,36 @@ h3{
 }
 
 .panel-body{
-  color: darkgreen;
+  color: #698096;
   font-family: 'Gentium Book Basic', serif;}
 
 a{
-  color:darkgreen;
+  color: #47627c;
     font-family: 'Gentium Book Basic', serif;
 
 }
 
 th{
   text-align: center;
-  color: purple;
+  color: #47627c;
   font-family: 'Gentium Book Basic', serif;
 }
 
 td{
   text-align: center;
-  color: purple;
+  color: #47627c;
   font-family: 'Gentium Book Basic', serif;
 }
 
 
 li{
   text-align:center;
-  color: darkgreen;
+  color: #698096;
   font-family: 'Gentium Book Basic', serif;
 }
 
 p{
-  color: darkgreen;
+  color: #698096;
   font-size: 12pt;
   font-family: 'Gentium Book Basic', serif;
 }
@@ -72,9 +86,17 @@ p{
 }
 
 .nav.navbar-nav li a{
-  color: green;
+  white-space: nowrap;
+  color: #47627c;
+  display: inline-block;
   font-family: 'Gentium Book Basic', serif;  font-size: 17pt;
 }
+
+.nav.navbar-nav li{
+  white-space: nowrap;
+  display: inline-block;
+}
+
 
 
 .jumbotron {

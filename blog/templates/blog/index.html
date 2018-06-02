@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+{% extends "app/base.html" %}
+    {% block body_block%}
+    {% load staticfiles %}
+
+    <div class="container">
+      <br><br><br><br><br><br>
+      <a href="{% url 'blog:index' %}"><h1>blog</h1></a>
+
+      <div class="row featurette">
+        <div class="col-md-9 col-md-push-3">
+
+          {% if posts %}
+            <ul>
+            {% for post in posts %}
+                <h3>{{ post.title }}</h3>
+                <h6>  &emsp;   {{ post.posted }}</h6>
+                <p>{{ post.body|linebreaks }}</p>
+
+            {% endfor %}
+            </ul>
+          {% else %}
+              <p>There are no posts.</p>
+          {% endif %}
+
+
+        </div>
+        <div class="col-md-3 col-md-pull-9">
+
+          {% for link in links %}
+              <p><a href="blog/view/{{ link.slug }}">{{ link.title }} - {{ link.posted }}</a></p>
+
+          {% endfor %}
+
+        </div>
+      </div>
+
+
+
+
+  </div>
+    {% endblock %}
