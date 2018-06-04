@@ -12,6 +12,12 @@ h6{
   color: #c9cfd8;
   font-family: 'Gentium Book Basic', serif;}
 }
+/*
+.table{
+  border-top: 100px;
+  border-top: green;
+} */
+
 
 .navbar-nav>li {
         float: none;
@@ -55,8 +61,16 @@ a{
 
 }
 
+#head1, #head2{
+  border-top: none;
+}
+#bloglink{
+  font-size: 9pt
+}
+
 th{
   text-align: center;
+  border-top: none;
   color: #47627c;
   font-family: 'Gentium Book Basic', serif;
 }
@@ -64,7 +78,18 @@ th{
 td{
   text-align: center;
   color: #47627c;
+  border-top: 1px solid;
   font-family: 'Gentium Book Basic', serif;
+}
+
+.btn.btn-default{
+    font-family: 'Gentium Book Basic', serif;
+      color: #47627c;
+
+}
+#butt{
+  font-family: 'Gentium Book Basic', serif;
+    color: #47627c;
 }
 
 

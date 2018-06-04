@@ -21,7 +21,7 @@
         </div>
         <div class="col-md-3 col-md-pull-9">
             {% for link in links %}
-                <p><a href="{{ link.slug }}">{{ link.title }} - {{ link.posted }}</a></p>
+                <p><a href="{{ link.slug }}" id="bloglink">{{ link.title }} - {{ link.posted }}</a></p>
 
             {% endfor %}
 
