@@ -55,27 +55,27 @@ def contact(request):
 			template = get_template('app/contact_template.txt')
 
 			context = {
-				'contact_name': contact_name, 
-				'contact_email': contact_email, 
+				'contact_name': contact_name,
+				'contact_email': contact_email,
 				'form_content': form_content,
 			}
 			content = template.render(context)
 
 			email = EmailMessage(
-				'New Contact Form Submission', 
-				content, 
+				'New Contact Form Submission',
+				content,
 				'Your website ',
-				['mclaughlin.john.duffy@gmail.com'], 
+				['mindfulschmidt@gmail.com',
+				 'mclaughlin.john.duffy@gmail.com'],
 				headers = {'Reply-To': contact_email}
 			)
 			email.send()
 
 			# send_mail('new mail', context['form_content'], 'jduffymclaughlin@gmail.com',
-			# 	['mclaughlin.john.duffy@gmail.com'], 
+			# 	['mclaughlin.john.duffy@gmail.com'],
 			# 	fail_silently=False)
 
 			#return render(request, 'app/contact_sent.html')
 			return contact_sent(request, context)
 
 	return render(request, 'app/contact.html', {'form': form_class})
-
