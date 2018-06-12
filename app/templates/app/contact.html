@@ -5,16 +5,24 @@
 <div class="container">
 
   <br><br><br><br><br><br>
-  <h1>connect with us</h1>
-  <p>I’m excited to meet you where you are. </p>
-  <br>
 
-  <form role="form" action="" method="post">
-      {% csrf_token %}
-      {{ form.as_p }}
+  <div class="col-md-6 col-md-push-6">
+    <img align="center" src="https://s3.amazonaws.com/project-jumpy/Connect.jpg" alt="" height="500">
+  </div>
+  <div class="col-md-6 col-md-pull-6">
+      <h1>connect with me</h1>
+      <p>I’m excited to meet you where you are. </p>
       <br>
-      <button type="submit" class="btn btn-default contactsubmit">Submit</button>
 
-  </form>
+      <form role="form" action="" method="post">
+          {% csrf_token %}
+          {{ form.as_p }}
+          <br>
+          <button type="submit" class="btn btn-default contactsubmit">Submit</button>
+
+      </form>
+
+  </div>
+
 </div>
 {% endblock %}
