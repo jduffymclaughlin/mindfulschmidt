@@ -113,12 +113,12 @@ p{
 .nav.navbar-nav li a{
   white-space: nowrap;
   color: #47627c;
-  display: inline-block;
+  /* display: inline-block; */
   font-family: 'Gentium Book Basic', serif;  font-size: 17pt;
 }
 
 .nav.navbar-nav li{
-  white-space: nowrap;
+  /* white-space: nowrap; */
   display: inline-block;
 }
 
