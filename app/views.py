@@ -13,6 +13,9 @@ def index(request):
 def other(request):
     return render(request, 'app/other.html')
 
+def onsite(request):
+	return render(request, 'app/onsite.html')
+
 def about_us(request):
     return render(request, 'app/about_us.html')
 

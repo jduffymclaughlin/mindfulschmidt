@@ -84,7 +84,9 @@ td{
 
 .btn.btn-default{
     font-family: 'Gentium Book Basic', serif;
-      color: #47627c;
+      color: white;
+    background-color: #47627c;
+
 
 }
 #butt{

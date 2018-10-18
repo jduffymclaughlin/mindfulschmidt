@@ -16,5 +16,6 @@ urlpatterns = [
 	path(r'school', views.school, name='school'),
 	path(r'assisted_living', views.assisted_living, name='assisted_living'),
 	path(r'private', views.private, name='private'),
+	path(r'onsite', views.onsite, name='onsite'),
 ]
 
