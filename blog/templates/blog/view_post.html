@@ -14,7 +14,7 @@
           {% block content %}
             <h3>{{ post.title }}</h3>
             <h6>  &emsp;   {{ post.posted }}</h6>
-            <p>{{ post.body|linebreaks }}</p>
+            <p>{% autoescape off %}{{ post.body|linebreaks }}{% endautoescape %}</p>
           {% endblock %}
 
         </ul>
