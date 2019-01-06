@@ -14,8 +14,8 @@
             <ul>
             {% for post in posts %}
                 <h3>{{ post.title }}</h3>
-                <h6>  &emsp;   {{ post.posted }}</h6>
-                <p>{{ post.body|linebreaks }}</p>
+                <h6 id="post">  &emsp;   {{ post.posted }}</h6>
+                <p text-align="center">{% autoescape off %}{{ post.body|linebreaks }}{% endautoescape %}</p>
 
             {% endfor %}
             </ul>
